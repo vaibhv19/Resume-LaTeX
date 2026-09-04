@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaibhav Gupta
+% Based off of: https://github.com/vaibhv19
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Vaibhav Gupta} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 92080 12172 ~
+    \href{mailto:gvaibhav.business@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{Email}} ~
+    \href{https://linkedin.com/in/vaibhv19}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} ~
+    \href{https://github.com/vaibhv19}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://vaibhav19.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Greater Noida Institute of Technology (GNIOT)}{Expected May 2027}
+      {Bachelor of Technology in Computer Science and Engineering}{Greater Noida, India}
+  \resumeSubHeadingListEnd
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{\textbf{Coursework:} Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Network}}
+    \vspace{-10pt}
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, Python, JavaScript, SQL} \\
+     \textbf{Test Automation}{: Playwright, Page Object Model, API Testing, Visual Regression Testing} \\
+     \textbf{Performance Testing}{: k6, Load/Stress/Smoke Testing, Grafana, InfluxDB} \\
+     \textbf{Security Testing}{: OWASP ZAP, SQL Injection/XSS Scanning, Broken Access Control, Input Fuzzing} \\
+     \textbf{Tools}{: Git, GitHub Actions, Docker, Allure Reports, Pytest, ESLint/Prettier, Ruff} \\
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{Aegis} $|$ \href{https://github.com/vaibhv19/Aegis}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Built an enterprise test automation framework (TypeScript, Playwright) covering E2E UI, API, and visual-regression testing against the Trajectory platform, using Page Object Model design and a custom API client layer with Bearer-token auth handling.}
+        \resumeItem{Engineered a cross-browser visual regression suite (Chromium, Firefox, WebKit) with deterministic screenshot comparison (disabled animations, subpixel tolerance, dynamic-content masking) and platform-specific baselines for Windows/Linux CI runners.}
+        \resumeItem{Automated CI/CD quality gates on GitHub Actions (lint $\rightarrow$ format $\rightarrow$ 54-case Playwright regression suite) with Allure/HTML reporting, an isolated test-data factory with auto-cleanup teardown, and an expected-failure annotation isolating a known backend defect without masking real regressions.}
+    \resumeItemListEnd
+          \vspace{-13pt}
+\resumeProjectHeading
+    {\textbf{Pulse} $|$ \href{https://github.com/vaibhv19/Pulse}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Built a performance and load-testing framework (k6, Grafana, InfluxDB, Docker Compose) to validate Phoenix/Trajectory APIs under load, stress, and smoke scenarios across environment-aware target configurations.}
+        \resumeItem{Implemented threshold-based pass/fail performance budgets (p95/p99 latency, error rate) enforced in CI, plus automated baseline comparison classifying runs as improved/regressed/unchanged within a 5\% variance limit.}
+        \resumeItem{Built a Grafana dashboard visualizing latency percentiles, throughput, and error rate over time, with a Node.js comparison processor generating human-readable and machine-readable run reports.}
+    \resumeItemListEnd
+          \vspace{-13pt}
+\resumeProjectHeading
+    {\textbf{Warden} $|$ \href{https://github.com/vaibhv19/Warden}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Built a controlled-environment security testing suite (Python, OWASP ZAP, Docker) automating vulnerability scanning, broken access-control verification, and input fuzzing against authorized targets only.}
+        \resumeItem{Implemented custom scanners for SQL injection (error/time/boolean-based), XSS, and authentication weaknesses, plus a User A/User B access-control model verifying IDOR-style cross-user access is blocked without false positives.}
+        \resumeItem{Built a unified reporting engine with severity categorization and signature-based deduplication exporting structured JSON/Markdown security reports; validated the full multi-scanner pipeline end-to-end and reached zero static-analysis errors.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------INTERNSHIP / TRAINING PROGRAM-----------
+\section{Internship/Training Program}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IBM PBEL Program}{July 2026 -- August 2026}
+      {Project Based Experiential Learning: Full Stack Web Development with JavaScript}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built and manually verified REST API endpoints and request/response flows across three full-stack projects (weather app, food ordering site, e-commerce platform), checking auth, validation, and error-handling paths before each deployment.}
+        \resumeItem{Enforced server-side input validation and boundary checks on user-facing forms and checkout flows, and cross-checked responsive UI behavior across viewport sizes prior to shipping to Vercel.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {BharatCares (Lenovo LEAP NextGen Scholar Program)}{June 2026 -- July 2026}
+      {AI-Driven Web Application \& Product Development}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building and manually testing multiple progressive web applications across weekly milestone assignments against functional requirements.}
+        \resumeItem{Independently designed and built VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education), validating real-time search/filtering and a consensus upvoting system against edge cases (empty states, duplicate votes, malformed input) before submission.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Edunet Foundation \& IBM SkillsBuild}{June 2026 -- July 2026}
+      {Emerging Technologies Internship}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 4-week AICTE-endorsed internship covering Agentic AI, Retrieval-Augmented Generation (RAG), Cybersecurity, and Quantum Computing, earning IBM certifications in Artificial Intelligence and Cybersecurity.}
+        \resumeItem{Designed and validated a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models, iterating on prompt logic against test cases as the program's capstone project.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+      \resumeItemListStart
+\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, with 5 applications deployed to production.}
+  \vspace{-16pt}
+\resumeItem{Solved 150+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
+     \resumeItemListEnd
+\end{document}
