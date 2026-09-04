@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaibhav Gupta
+% Based off of: https://github.com/vaibhv19
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Vaibhav Gupta} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 92080 12172 ~
+    \href{mailto:gvaibhav.business@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{Email}} ~
+    \href{https://linkedin.com/in/vaibhv19}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} ~
+    \href{https://github.com/vaibhv19}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://vaibhav19.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Greater Noida Institute of Technology (GNIOT)}{Expected May 2027}
+      {Bachelor of Technology in Computer Science and Engineering}{Greater Noida, India}
+  \resumeSubHeadingListEnd
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{\textbf{Coursework:} Artificial Intelligence, Database Management Systems, Operating Systems, Computer Network}}
+    \vspace{-10pt}
+\end{itemize} 
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, JavaScript, SQL} \\
+     \textbf{AI/ML \& Agentic Systems}{: LangGraph (Multi-Agent Orchestration), Retrieval-Augmented Generation (RAG), Hybrid Search (Vector + BM25), Prompt Engineering, LLM Evaluation \& Regression Testing, Vector Databases (Pinecone/pgvector/FAISS)} \\
+     \textbf{Backend}{: Django, Spring Boot, Celery, Django Channels (ASGI), REST APIs, JWT Auth} \\
+     \textbf{Infrastructure/Tools}{: Docker (Docker SDK, Sandboxing), Redis, PostgreSQL, WebSockets, Pytest, Git} \\
+     \textbf{Frontend}{: React} \\
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+ 
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{Vigil} $|$ \href{https://github.com/vaibhv19/Vigil}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Developed an isolated, ephemeral sandbox (Docker SDK) that provisions unprivileged, containerized runtimes per agent tool call with restricted filesystem access and capped CPU/memory/time limits, reliably torn down on crash or timeout.}
+        \resumeItem{Developed a deterministic evaluation harness that scores agent runs pass/fail against pre-defined tasks with known-correct outcomes, replacing subjective review with hard accuracy metrics.}
+        \resumeItem{Built a tool-execution loop tracker that flags risky agent behavior -- excessive repeated calls, filesystem writes outside the sandbox, unexpected process spawning -- logging every run to PostgreSQL for auditability.}
+    \resumeItemListEnd          \vspace{-13pt}
+  \resumeProjectHeading
+    {\textbf{Phoenix} $|$ \href{https://github.com/vaibhv19/phoenix}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Developed a hybrid retrieval pipeline (vector + BM25 keyword search) over technical documentation, outperforming vector-only search on exact-match terms like config keys and exception names.}
+        \resumeItem{Built a confidence-scoring layer on retrieved chunks with fallback strategies -- query rewriting, re-ranking, or asking a clarifying question -- instead of answering on low-confidence retrieval.}
+        \resumeItem{Developed a Spring Boot API layer integrated with a Python AI engine for ingestion/embeddings, paired with a React chat interface surfacing source citations and confidence with every answer.}
+    \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+    {\textbf{Foundry} $|$ \href{https://github.com/vaibhv19/Foundry}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Developed a multi-agent debate loop in LangGraph where Investor, Product Manager, and Tech Lead personas negotiate business viability, product scope, and system architecture from a single startup concept, with an automated Tie-Breaker node forcing consensus after 5 unresolved iterations.}
+        \resumeItem{Built a relational Decision Memory Engine that extracts durable design commitments from agent output via structured Pydantic parsing into PostgreSQL, tracking cross-domain dependency graphs to deterministically detect contradictions and cascade overrides across sections without bloating prompt context with raw transcripts.}
+        \resumeItem{Implemented targeted section regeneration with point-in-time version rollback -- re-running only the necessary agent sub-sequence against immutable upstream constraints -- alongside async Celery/Redis task processing that streams agent reasoning tokens and lifecycle events to a React 19/Zustand frontend over authenticated Django Channels WebSockets.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------INTERNSHIP / TRAINING PROGRAM-----------
+\section{Internship/Training Program}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Edunet Foundation \& IBM SkillsBuild}{June 2026 -- July 2026}
+      {Emerging Technologies Internship}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 4-week AICTE-endorsed internship covering Agentic AI, Retrieval-Augmented Generation (RAG), and Cybersecurity, earning IBM certifications in Artificial Intelligence and Cybersecurity.}
+        \resumeItem{Designed a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models, building the workflow architecture and custom prompt logic as the program's capstone project.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {BharatCares (Lenovo LEAP NextGen Scholar Program)}{June 2026 -- July 2026}
+      {AI-Driven Web Application \& Product Development}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 6-week product development program, independently architecting and shipping a full capstone web application -- end-to-end ownership from system design through implementation, the same self-directed build discipline applied across the AI projects above.}
+        \resumeItem{Built with React across weekly milestone assignments, including client-side state management and real-time search/filtering logic.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IBM PBEL Program}{July 2026 -- August 2026}
+      {Project Based Experiential Learning: Full Stack Web Development with JavaScript}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built REST APIs and backend services (Node.js, Express.js, MongoDB) with JWT authentication -- the same API/service patterns used to serve and integrate AI model endpoints.}
+        \resumeItem{Delivered multiple projects (food ordering, e-commerce) across the full development-to-deployment lifecycle on Vercel.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+      \resumeItemListStart
+\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, with 5 applications deployed to production.}
+  \vspace{-16pt}
+\resumeItem{Solved 150+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
+     \resumeItemListEnd
+\end{document}
