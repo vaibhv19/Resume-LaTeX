@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaibhav Gupta
+% Based off of: https://github.com/vaibhv19
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Vaibhav Gupta} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 92080 12172 ~
+    \href{mailto:gvaibhav.business@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{Email}} ~
+    \href{https://linkedin.com/in/vaibhv19}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} ~
+    \href{https://github.com/vaibhv19}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://vaibhav19.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Greater Noida Institute of Technology (GNIOT)}{Expected May 2027}
+      {Bachelor of Technology in Computer Science and Engineering}{Greater Noida, India}
+  \resumeSubHeadingListEnd
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{\textbf{Coursework:} Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Network}}
+    \vspace{-10pt}
+\end{itemize} 
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Java, SQL} \\
+     \textbf{Frontend}{: React 19, Next.js, Tailwind CSS, Zustand, TanStack Query, Vite} \\
+     \textbf{Tools \& Deployment}{: Git, Docker, Vercel, AWS (EC2, S3), CI/CD, Web Workers / WASM} \\
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+ 
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{Trajectory} $|$ \href{https://github.com/vaibhv19/trajectory}{\underline{GitHub}} $|$ \href{https://trajectory-mu-six.vercel.app}{\underline{Live Demo}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Developed the React 19/TypeScript frontend for a full-stack career operating system, structuring a feature-based SPA with TanStack Query for server-state caching and Zustand for client state (auth, theme, sidebar) kept in sync across the app.}
+        \resumeItem{Resolved a token-refresh race condition in the API client by implementing an in-flight refresh mutex with a subscriber queue, so concurrent authenticated requests pause and resolve safely against a single \texttt{/auth/refresh} call instead of triggering duplicate rotations.}
+        \resumeItem{Built a global Ctrl+K command palette for keyboard-driven navigation and a 3-way OS-aware theme cycler (light/dark/system) using \texttt{matchMedia}, alongside Recharts-based dashboards visualizing pipeline conversion funnels and response rates.}
+    \resumeItemListEnd          \vspace{-13pt}
+  \resumeProjectHeading
+    {\textbf{Check-Mate Analyse} $|$ \href{https://github.com/vaibhv19/check-mate-analyse}{\underline{GitHub}} $|$ \href{https://check-mate-analyse.vercel.app/}{\underline{Live Demo}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Developed a local-first chess analysis workbench in React 19 and TypeScript, running Stockfish 16 compiled to WebAssembly inside a dedicated Web Worker to keep CPU-intensive engine search fully isolated from the UI thread.}
+        \resumeItem{Implemented an interrupt-dominant UCI protocol bridge that halts stale engine searches on move navigation, keeping piece-dragging and rapid game traversal responsive.}
+        \resumeItem{Built a non-destructive "What-If" sandbox for exploring alternative move branches, custom PGN parsing/validation, and centipawn-loss move classification visualized via an interactive Recharts evaluation curve, backed by a 19-test Vitest suite.}
+    \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+    {\textbf{Portfolio \& Blog} $|$ \href{https://github.com/vaibhv19/portfolio-website}{\underline{GitHub}} $|$ \href{https://vaibhav19.vercel.app/}{\underline{Live Demo}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Developed a personal engineering portfolio and technical blog with Next.js 16 (App Router) and React 19, statically pre-rendering all article and technology pages via \texttt{generateStaticParams} for instant transitions and zero server dependencies.}
+        \resumeItem{Engineered a 3-tier resilient fallback pipeline (authenticated GraphQL $\rightarrow$ public REST proxy $\rightarrow$ deterministic snapshot) for live GitHub and LeetCode telemetry widgets, cached via ISR headers so the UI never breaks on third-party API outages.}
+        \resumeItem{Designed a custom dark-mode visual system in Tailwind CSS v4 and an accessible mobile navigation drawer with Escape-key handling and animated backdrop transitions.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------INTERNSHIP / TRAINING PROGRAM-----------
+\section{Internship/Training Program}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BharatCares (Lenovo LEAP NextGen Scholar Program)}{June 2026 -- July 2026}
+      {AI-Driven Web Application \& Product Development}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building multiple progressive web applications with React 18/19, Vite, and client-side state architecture across weekly milestone assignments.}
+        \resumeItem{Independently designed and built VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education) — a free peer study-resource vault and doubt-clearance board using client-side persistence, real-time search/filtering, and a consensus upvoting system.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Edunet Foundation \& IBM SkillsBuild}{June 2026 -- July 2026}
+      {Emerging Technologies Internship}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 4-week AICTE-endorsed internship covering Agentic AI, Retrieval-Augmented Generation (RAG), Cybersecurity, and Quantum Computing, earning IBM certifications in Artificial Intelligence and Cybersecurity.}
+        \resumeItem{Designed a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models, building the workflow architecture and custom prompt logic as the program's capstone project.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IBM PBEL Program}{July 2026 -- August 2026}
+      {Project Based Experiential Learning: Full Stack Web Development with JavaScript}{Remote}
+      \resumeItemListStart
+        \resumeItem{Trained across the JavaScript ecosystem: built responsive frontends with HTML, CSS, Tailwind CSS, and React, and developed backend services using Node.js, Express.js, EJS, and MongoDB with RESTful APIs and JWT authentication.}
+        \resumeItem{Delivered hands-on projects (weather app, food ordering site, e-commerce platform) covering the full development-to-deployment lifecycle on Vercel — food ordering platform live at \href{https://food-ordering-system-ruddy-sigma.vercel.app/}{\underline{food-ordering-system-ruddy-sigma.vercel.app}} — plus SEO and performance optimization.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+      \resumeItemListStart
+\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, with 5 applications deployed to production.}
+  \vspace{-16pt}
+\resumeItem{Solved 150+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
+     \resumeItemListEnd
+\end{document}
