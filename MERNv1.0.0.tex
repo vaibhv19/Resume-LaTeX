@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaibhav Gupta
+% Based off of: https://github.com/vaibhv19
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Vaibhav Gupta} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 92080 12172 ~
+    \href{mailto:gvaibhav.business@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{Email}} ~
+    \href{https://linkedin.com/in/vaibhv19}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} ~
+    \href{https://github.com/vaibhv19}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://vaibhav19.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Greater Noida Institute of Technology (GNIOT)}{Expected May 2027}
+      {Bachelor of Technology in Computer Science and Engineering}{Greater Noida, India}
+  \resumeSubHeadingListEnd
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{\textbf{Coursework:} Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Network}}
+    \vspace{-10pt}
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript (ES6+), Java, SQL} \\
+     \textbf{Frontend}{: React (18/19), Redux/Zustand, Tailwind CSS, Vite} \\
+     \textbf{Backend}{: Node.js, Express.js, REST APIs, JWT Authentication} \\
+     \textbf{Database}{: MongoDB, Mongoose, PostgreSQL} \\
+     \textbf{Tools}{: Git, Docker, AWS (EC2, S3), CI/CD, Vercel, Nginx} \\
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{LinkUp} $|$ \href{https://github.com/vaibhv19/LinkUp}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Built a college social-media backend (Node.js, Express.js, MongoDB/Mongoose) with a REST API and a server-rendered EJS frontend, implementing JWT authentication delivered via httpOnly cookies and bcrypt password hashing.}
+        \resumeItem{Implemented core social features across 15+ REST endpoints: paginated post feeds, idempotent like/unlike, threaded comments, and follow/unfollow relationships with follower/following stats.}
+        \resumeItem{Enforced server-side, role-based authorization (owner-only vs. admin moderation) on every write path, validated all input with express-validator, and engineered an automatic mongodb-memory-server fallback for zero-config local development.}
+    \resumeItemListEnd
+          \vspace{-13pt}
+\resumeProjectHeading
+    {\textbf{General Store Ledger} $|$ \href{https://github.com/vaibhv19/general-store-ledger}{\underline{GitHub}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Built a full-stack MERN e-commerce app (React, Vite, Tailwind CSS, Node.js/Express, MongoDB/Mongoose) with a product catalog, cart, checkout, and order history, proxying live product data from the DummyJSON API.}
+        \resumeItem{Implemented JWT authentication via httpOnly/sameSite cookies with bcrypt password hashing, and Context API-based cart and auth state management on the frontend.}
+        \resumeItem{Hardened checkout against client-side tampering by recalculating order totals server-side from freshly fetched product prices, and enforced ownership validation on all order-history endpoints.}
+    \resumeItemListEnd
+          \vspace{-13pt}
+% TODO: Project 3 -- waiting on details
+\resumeProjectHeading
+    {\textbf{The Tiffin Dispatch} $|$ \href{https://github.com/vaibhv19/the-tiffin-dispatch}{\underline{GitHub}} $|$ \href{https://food-ordering-system-ruddy-sigma.vercel.app/}{\underline{Live Demo}}}{2026}
+    \resumeItemListStart
+        \resumeItem{Architected a single-page cafe ordering application (React 19, React Router v7, Tailwind CSS, Vite) consuming the TheMealDB REST API, with client-side data normalization and defensive dietary filtering.}
+        \resumeItem{Engineered a deterministic integer-hashing pricing algorithm to compute consistent, session-stable INR prices across the catalog grid, detail modals, and checkout flow with no backend dependency.}
+        \resumeItem{Synchronized cart and favorites state via React Context across menu cards, a slide-out cart drawer, and a floating cart bar; implemented debounced multi-criteria search/filtering, focus-trapped accessible modals, and print-optimized receipt stylesheets.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------INTERNSHIP / TRAINING PROGRAM-----------
+\section{Internship/Training Program}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IBM PBEL Program}{July 2026 -- August 2026}
+      {Project Based Experiential Learning: Full Stack Web Development with JavaScript (MERN)}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built full-stack MERN applications end-to-end: designed RESTful APIs with Node.js and Express.js, modeled data with MongoDB, and implemented JWT-based authentication and server-rendered views with EJS.}
+        \resumeItem{Built responsive React frontends styled with Tailwind CSS across three shipped projects (weather app, food ordering site, e-commerce platform), covering the full development-to-deployment lifecycle on Vercel, plus SEO and performance optimization.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {BharatCares (Lenovo LEAP NextGen Scholar Program)}{June 2026 -- July 2026}
+      {AI-Driven Web Application \& Product Development}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building multiple progressive web applications with React 18/19, Vite, and client-side state architecture across weekly milestone assignments.}
+        \resumeItem{Independently designed and built VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education) — a free peer study-resource vault and doubt-clearance board using client-side persistence, real-time search/filtering, and a consensus upvoting system.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Edunet Foundation \& IBM SkillsBuild}{June 2026 -- July 2026}
+      {Emerging Technologies Internship}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed a 4-week AICTE-endorsed internship covering Agentic AI, Retrieval-Augmented Generation (RAG), Cybersecurity, and Quantum Computing, earning IBM certifications in Artificial Intelligence and Cybersecurity.}
+        \resumeItem{Designed a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models, building the workflow architecture and custom prompt logic as the program's capstone project.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+      \resumeItemListStart
+\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, with 5 applications deployed to production.}
+  \vspace{-16pt}
+\resumeItem{Solved 150+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
+     \resumeItemListEnd
+\end{document}
