@@ -1,6 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Vaibhav Gupta
+% Track  : MERN Stack
 % Based off of: https://github.com/vaibhv19
 % License : MIT
 %------------------------
@@ -126,11 +127,11 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, Python, JavaScript, SQL} \\
-     \textbf{Test Automation}{: Playwright, Page Object Model, API Testing, Visual Regression Testing} \\
-     \textbf{Performance Testing}{: k6, Load/Stress/Smoke Testing, Grafana, InfluxDB} \\
-     \textbf{Security Testing}{: OWASP ZAP, SQL Injection/XSS Scanning, Broken Access Control, Input Fuzzing} \\
-     \textbf{Tools}{: Git, GitHub Actions, Docker, Allure Reports, Pytest, ESLint/Prettier, Ruff} \\
+     \textbf{Languages}{: JavaScript (ES6+), TypeScript, Java, SQL} \\
+     \textbf{Frontend}{: React (18/19), Redux/Zustand, Tailwind CSS, Vite} \\
+     \textbf{Backend}{: Node.js, Express.js, REST APIs, JWT Authentication, BullMQ} \\
+     \textbf{Database}{: MongoDB, Mongoose, PostgreSQL, Redis, Elasticsearch} \\
+     \textbf{Tools}{: Git, Docker, AWS (EC2, S3), CI/CD, Vercel, Nginx} \\
     }}
  \end{itemize}
  \vspace{-12pt}
@@ -140,27 +141,27 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
 \resumeProjectHeading
-    {\textbf{Aegis} $|$ \href{https://github.com/vaibhv19/Aegis}{\underline{GitHub}}}{2026}
+    {\textbf{Email Job Scheduler} $|$ \href{https://github.com/vaibhv19/Email-Job-Scheduler}{\underline{GitHub}} $|$ \href{https://email-job-scheduler.vaibhv19.dev}{\underline{Live Demo}}}{2026}
     \resumeItemListStart
-        \resumeItem{Built an enterprise test automation framework (TypeScript, Playwright) covering E2E UI, API, and visual-regression testing against the Trajectory platform, using Page Object Model design and a custom API client layer with Bearer-token auth handling.}
-        \resumeItem{Engineered a cross-browser visual regression suite (Chromium, Firefox, WebKit) with deterministic screenshot comparison (disabled animations, subpixel tolerance, dynamic-content masking) and platform-specific baselines for Windows/Linux CI runners.}
-        \resumeItem{Automated CI/CD quality gates on GitHub Actions (lint $\rightarrow$ format $\rightarrow$ 54-case Playwright regression suite) with Allure/HTML reporting, an isolated test-data factory with auto-cleanup teardown, and an expected-failure annotation isolating a known backend defect without masking real regressions.}
+        \resumeItem{Developed a distributed email scheduling engine (Node.js, Express.js, TypeScript, React) using BullMQ delayed jobs on Redis with PostgreSQL persistence, containerized with Docker and deployed on AWS with the dashboard on Vercel.}
+        \resumeItem{Implemented atomic per-sender rate limiting (minimum-interval spacing and sliding hourly quotas) using Redis Lua scripts, keeping limits correct across concurrent workers.}
+        \resumeItem{Built a React dashboard for batch CSV recipient uploads, queue monitoring, and Ethereal SMTP preview capture, with Elasticsearch-powered full-text search across scheduled and delivered emails.}
     \resumeItemListEnd
           \vspace{-13pt}
 \resumeProjectHeading
-    {\textbf{Pulse} $|$ \href{https://github.com/vaibhv19/Pulse}{\underline{GitHub}}}{2026}
+    {\textbf{LinkUp} $|$ \href{https://github.com/vaibhv19/LinkUp}{\underline{GitHub}}}{2026}
     \resumeItemListStart
-        \resumeItem{Built a performance and load-testing framework (k6, Grafana, InfluxDB, Docker Compose) to validate Phoenix/Trajectory APIs under load, stress, and smoke scenarios across environment-aware target configurations.}
-        \resumeItem{Implemented threshold-based pass/fail performance budgets (p95/p99 latency, error rate) enforced in CI, plus automated baseline comparison classifying runs as improved/regressed/unchanged within a 5\% variance limit.}
-        \resumeItem{Built a Grafana dashboard visualizing latency percentiles, throughput, and error rate over time, with a Node.js comparison processor generating human-readable and machine-readable run reports.}
+        \resumeItem{Built a college social-media backend (Node.js, Express.js, MongoDB/Mongoose) with a REST API and a server-rendered EJS frontend, implementing JWT authentication delivered via httpOnly cookies and bcrypt password hashing.}
+        \resumeItem{Implemented core social features across 15+ REST endpoints: paginated post feeds, idempotent like/unlike, threaded comments, and follow/unfollow relationships with follower/following stats.}
+        \resumeItem{Enforced server-side, role-based authorization (owner-only vs. admin moderation) on every write path, validated all input with express-validator, and engineered an automatic mongodb-memory-server fallback for zero-config local development.}
     \resumeItemListEnd
           \vspace{-13pt}
 \resumeProjectHeading
-    {\textbf{Warden} $|$ \href{https://github.com/vaibhv19/Warden}{\underline{GitHub}}}{2026}
+    {\textbf{General Store Ledger} $|$ \href{https://github.com/vaibhv19/general-store-ledger}{\underline{GitHub}}}{2026}
     \resumeItemListStart
-        \resumeItem{Built a controlled-environment security testing suite (Python, OWASP ZAP, Docker) automating vulnerability scanning, broken access-control verification, and input fuzzing against authorized targets only.}
-        \resumeItem{Implemented custom scanners for SQL injection (error/time/boolean-based), XSS, and authentication weaknesses, plus a User A/User B access-control model verifying IDOR-style cross-user access is blocked without false positives.}
-        \resumeItem{Built a unified reporting engine with severity categorization and signature-based deduplication exporting structured JSON/Markdown security reports; validated the full multi-scanner pipeline end-to-end and reached zero static-analysis errors.}
+        \resumeItem{Built a full-stack MERN e-commerce app (React, Vite, Tailwind CSS, Node.js/Express, MongoDB/Mongoose) with a product catalog, cart, checkout, and order history, proxying live product data from the DummyJSON API.}
+        \resumeItem{Implemented JWT authentication via httpOnly/sameSite cookies with bcrypt password hashing, and Context API-based cart and auth state management on the frontend.}
+        \resumeItem{Hardened checkout against client-side tampering by recalculating order totals server-side from freshly fetched product prices, and enforced ownership validation on all order-history endpoints.}
     \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-12pt}
@@ -170,24 +171,24 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {IBM PBEL Program}{July 2026 -- August 2026}
-      {Project Based Experiential Learning: Full Stack Web Development with JavaScript}{Remote}
+      {Project Based Experiential Learning: Full Stack Web Development with JavaScript (MERN)}{Remote}
       \resumeItemListStart
-        \resumeItem{Built and manually verified REST API endpoints and request/response flows across three full-stack projects (weather app, food ordering site, e-commerce platform), checking auth, validation, and error-handling paths before each deployment.}
-        \resumeItem{Enforced server-side input validation and boundary checks on user-facing forms and checkout flows, and cross-checked responsive UI behavior across viewport sizes prior to shipping to Vercel.}
+        \resumeItem{Built full-stack MERN applications end-to-end: designed RESTful APIs with Node.js and Express.js, modeled data with MongoDB, and implemented JWT-based authentication and server-rendered views with EJS.}
+        \resumeItem{Built responsive React frontends styled with Tailwind CSS across three shipped projects (weather app, food ordering site, e-commerce platform), covering the full development-to-deployment lifecycle on Vercel, plus SEO and performance optimization.}
       \resumeItemListEnd
     \resumeSubheading
       {BharatCares (Lenovo LEAP NextGen Scholar Program)}{June 2026 -- July 2026}
       {AI-Driven Web Application \& Product Development}{Remote}
       \resumeItemListStart
-        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building and manually testing multiple progressive web applications across weekly milestone assignments against functional requirements.}
-        \resumeItem{Independently designed and built VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education), validating real-time search/filtering and a consensus upvoting system against edge cases (empty states, duplicate votes, malformed input) before submission.}
+        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building multiple progressive web applications with React 18/19 and Vite across weekly milestone assignments.}
+        \resumeItem{Independently developed VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education): a free peer study-resource vault and doubt-clearance board with client-side persistence, real-time search/filtering, and a consensus upvoting system.}
       \resumeItemListEnd
     \resumeSubheading
       {Edunet Foundation \& IBM SkillsBuild}{June 2026 -- July 2026}
       {Emerging Technologies Internship}{Remote}
       \resumeItemListStart
         \resumeItem{Completed a 4-week AICTE-endorsed internship covering Agentic AI, Retrieval-Augmented Generation (RAG), Cybersecurity, and Quantum Computing, earning IBM certifications in Artificial Intelligence and Cybersecurity.}
-        \resumeItem{Designed and validated a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models, iterating on prompt logic against test cases as the program's capstone project.}
+        \resumeItem{Designed a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models as the program's capstone project.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-12pt}
@@ -195,8 +196,8 @@
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
       \resumeItemListStart
-\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, with 5 applications deployed to production.}
+\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, each shipped as either a live deployment or a run-ready open-source repository.}
   \vspace{-16pt}
-\resumeItem{Solved 250+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
+\resumeItem{Solved 300+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
      \resumeItemListEnd
 \end{document}

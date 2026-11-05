@@ -1,6 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Vaibhav Gupta
+% Track  : Frontend Developer
 % Based off of: https://github.com/vaibhv19
 % License : MIT
 %------------------------
@@ -126,11 +127,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript (ES6+), Java, SQL} \\
-     \textbf{Frontend}{: React (18/19), Redux/Zustand, Tailwind CSS, Vite} \\
-     \textbf{Backend}{: Node.js, Express.js, REST APIs, JWT Authentication} \\
-     \textbf{Database}{: MongoDB, Mongoose, PostgreSQL} \\
-     \textbf{Tools}{: Git, Docker, AWS (EC2, S3), CI/CD, Vercel, Nginx} \\
+     \textbf{Languages}{: JavaScript, TypeScript, Java, SQL} \\
+     \textbf{Frontend}{: React 19, Next.js, Tailwind CSS, Zustand, TanStack Query, Vite} \\
+     \textbf{Tools \& Deployment}{: Git, Docker, Vercel, AWS (EC2, S3), CI/CD, Web Workers / WASM} \\
     }}
  \end{itemize}
  \vspace{-12pt}
@@ -140,28 +139,27 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
 \resumeProjectHeading
-    {\textbf{LinkUp} $|$ \href{https://github.com/vaibhv19/LinkUp}{\underline{GitHub}}}{2026}
+    {\textbf{Trajectory} $|$ \href{https://github.com/vaibhv19/trajectory}{\underline{GitHub}} $|$ \href{https://trajectory.vaibhv19.dev}{\underline{Live Demo}}}{2026}
     \resumeItemListStart
-        \resumeItem{Built a college social-media backend (Node.js, Express.js, MongoDB/Mongoose) with a REST API and a server-rendered EJS frontend, implementing JWT authentication delivered via httpOnly cookies and bcrypt password hashing.}
-        \resumeItem{Implemented core social features across 15+ REST endpoints: paginated post feeds, idempotent like/unlike, threaded comments, and follow/unfollow relationships with follower/following stats.}
-        \resumeItem{Enforced server-side, role-based authorization (owner-only vs. admin moderation) on every write path, validated all input with express-validator, and engineered an automatic mongodb-memory-server fallback for zero-config local development.}
+        \resumeItem{Developed the React 19/TypeScript frontend for a full-stack career operating system, structuring a feature-based SPA with TanStack Query for server-state caching and Zustand for client state (auth, theme, sidebar) kept in sync across the app.}
+        \resumeItem{Resolved a token-refresh race condition in the API client by implementing an in-flight refresh mutex with a subscriber queue, so concurrent authenticated requests pause and resolve safely against a single \texttt{/auth/refresh} call instead of triggering duplicate rotations.}
+        \resumeItem{Built a global Ctrl+K command palette for keyboard-driven navigation and a 3-way OS-aware theme cycler (light/dark/system) using \texttt{matchMedia}, alongside Recharts-based dashboards visualizing pipeline conversion funnels and response rates.}
     \resumeItemListEnd
           \vspace{-13pt}
 \resumeProjectHeading
-    {\textbf{General Store Ledger} $|$ \href{https://github.com/vaibhv19/general-store-ledger}{\underline{GitHub}}}{2026}
+    {\textbf{CheckMate} $|$ \href{https://github.com/vaibhv19/Check-Mate-Analyse}{\underline{GitHub}} $|$ \href{https://checkmate.vaibhv19.dev}{\underline{Live Demo}}}{2026}
     \resumeItemListStart
-        \resumeItem{Built a full-stack MERN e-commerce app (React, Vite, Tailwind CSS, Node.js/Express, MongoDB/Mongoose) with a product catalog, cart, checkout, and order history, proxying live product data from the DummyJSON API.}
-        \resumeItem{Implemented JWT authentication via httpOnly/sameSite cookies with bcrypt password hashing, and Context API-based cart and auth state management on the frontend.}
-        \resumeItem{Hardened checkout against client-side tampering by recalculating order totals server-side from freshly fetched product prices, and enforced ownership validation on all order-history endpoints.}
+        \resumeItem{Developed a local-first chess analysis workbench in React 19 and TypeScript, running Stockfish 16 compiled to WebAssembly inside a dedicated Web Worker to keep CPU-intensive engine search fully isolated from the UI thread.}
+        \resumeItem{Implemented an interrupt-dominant UCI protocol bridge that halts stale engine searches on move navigation, keeping piece-dragging and rapid game traversal responsive.}
+        \resumeItem{Built a non-destructive "What-If" sandbox for exploring alternative move branches, custom PGN parsing/validation, and centipawn-loss move classification visualized via an interactive Recharts evaluation curve, backed by a 19-test Vitest suite.}
     \resumeItemListEnd
           \vspace{-13pt}
-% TODO: Project 3 -- waiting on details
 \resumeProjectHeading
-    {\textbf{The Tiffin Dispatch} $|$ \href{https://github.com/vaibhv19/the-tiffin-dispatch}{\underline{GitHub}} $|$ \href{https://food-ordering-system-ruddy-sigma.vercel.app/}{\underline{Live Demo}}}{2026}
+    {\textbf{1nfinity} $|$ \href{https://1nfinity.online}{\underline{Live Demo}}}{2026}
     \resumeItemListStart
-        \resumeItem{Architected a single-page cafe ordering application (React 19, React Router v7, Tailwind CSS, Vite) consuming the TheMealDB REST API, with client-side data normalization and defensive dietary filtering.}
-        \resumeItem{Engineered a deterministic integer-hashing pricing algorithm to compute consistent, session-stable INR prices across the catalog grid, detail modals, and checkout flow with no backend dependency.}
-        \resumeItem{Synchronized cart and favorites state via React Context across menu cards, a slide-out cart drawer, and a floating cart bar; implemented debounced multi-criteria search/filtering, focus-trapped accessible modals, and print-optimized receipt stylesheets.}
+        \resumeItem{Developed the production website for an influencer-marketing agency using Next.js (App Router) and Tailwind CSS, featuring marquee and scroll motion, embedded video, and consultation call-to-action flows.}
+        \resumeItem{Implemented a working contact form with Resend email delivery, plus Google Analytics 4 and Search Console/Bing integration to track traffic and indexing from launch.}
+        \resumeItem{Ran a QA audit across SEO and performance standards before launch, then deployed on Vercel with Cloudflare DNS and a custom domain.}
     \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-12pt}
@@ -170,25 +168,25 @@
 \section{Internship/Training Program}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {IBM PBEL Program}{July 2026 -- August 2026}
-      {Project Based Experiential Learning: Full Stack Web Development with JavaScript (MERN)}{Remote}
-      \resumeItemListStart
-        \resumeItem{Built full-stack MERN applications end-to-end: designed RESTful APIs with Node.js and Express.js, modeled data with MongoDB, and implemented JWT-based authentication and server-rendered views with EJS.}
-        \resumeItem{Built responsive React frontends styled with Tailwind CSS across three shipped projects (weather app, food ordering site, e-commerce platform), covering the full development-to-deployment lifecycle on Vercel, plus SEO and performance optimization.}
-      \resumeItemListEnd
-    \resumeSubheading
       {BharatCares (Lenovo LEAP NextGen Scholar Program)}{June 2026 -- July 2026}
       {AI-Driven Web Application \& Product Development}{Remote}
       \resumeItemListStart
-        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building multiple progressive web applications with React 18/19, Vite, and client-side state architecture across weekly milestone assignments.}
-        \resumeItem{Independently designed and built VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education) — a free peer study-resource vault and doubt-clearance board using client-side persistence, real-time search/filtering, and a consensus upvoting system.}
+        \resumeItem{Completed a 6-week technical program on modern frontend engineering, building multiple progressive web applications with React 18/19 and Vite across weekly milestone assignments.}
+        \resumeItem{Independently developed VidyaLink, a capstone web app addressing UN SDG 4 (Quality Education): a free peer study-resource vault and doubt-clearance board with client-side persistence, real-time search/filtering, and a consensus upvoting system.}
       \resumeItemListEnd
     \resumeSubheading
       {Edunet Foundation \& IBM SkillsBuild}{June 2026 -- July 2026}
       {Emerging Technologies Internship}{Remote}
       \resumeItemListStart
         \resumeItem{Completed a 4-week AICTE-endorsed internship covering Agentic AI, Retrieval-Augmented Generation (RAG), Cybersecurity, and Quantum Computing, earning IBM certifications in Artificial Intelligence and Cybersecurity.}
-        \resumeItem{Designed a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models, building the workflow architecture and custom prompt logic as the program's capstone project.}
+        \resumeItem{Designed a multi-agent RAG workflow (Startup Blueprint Generator) in Langflow using IBM Granite foundation models as the program's capstone project.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {IBM PBEL Program}{July 2026 -- August 2026}
+      {Project Based Experiential Learning: Full Stack Web Development with JavaScript}{Remote}
+      \resumeItemListStart
+        \resumeItem{Trained across the JavaScript ecosystem: built responsive frontends with HTML, CSS, Tailwind CSS, and React, and developed backend services using Node.js, Express.js, EJS, and MongoDB with RESTful APIs and JWT authentication.}
+        \resumeItem{Delivered hands-on projects (weather app, food ordering site, e-commerce platform) covering the full development-to-deployment lifecycle on Vercel, with the food ordering platform live at \href{https://thetiffindispatch.vaibhv19.dev}{\underline{thetiffindispatch.vaibhv19.dev}}, plus SEO and performance optimization.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-12pt}
@@ -196,8 +194,8 @@
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
       \resumeItemListStart
-\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, with 5 applications deployed to production.}
+\resumeItem{Built 11+ software projects across AI, distributed systems, and full-stack development, each shipped as either a live deployment or a run-ready open-source repository.}
   \vspace{-16pt}
-\resumeItem{Solved 250+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
+\resumeItem{Solved 300+ algorithmic problems on LeetCode, with continued daily practice across core data structures and algorithmic patterns.}
      \resumeItemListEnd
 \end{document}
